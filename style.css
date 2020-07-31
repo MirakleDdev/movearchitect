@@ -1,0 +1,409 @@
+*{
+    margin: 0; padding: 0;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: linear-gradient(180deg, #FFFFFF, #E5E5E5);
+}
+main{
+    padding: 0 8em;
+}
+section{
+    padding-top: 40px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+header ul{
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+}
+header li{
+    list-style: none;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+}
+header div li{
+    padding-right: 50px;
+}
+header ul li a{
+    text-decoration: none;
+    color: rgb(2, 37, 18);
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 10px 15px;
+}
+header ul li a:hover{
+    border-bottom: 2px solid rgb(1, 1, 94);
+}
+header .menu{
+    font-size: 2.5em; 
+    display: none;
+}
+input[type="checkbox"]{
+    display: none;
+}
+@media screen and (max-width: 700px){
+    header ul{
+        position: fixed;
+        top:100px;
+        right: -100%;
+        background: rgba(0, 0, 0, 0.6);
+        height: calc(50vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    header ul li a{
+        color: white;
+    }
+    header .menu{
+        display: block;
+        width: 50px;
+        padding: 10px;
+        margin-top: 5px;
+        text-align: center;
+        margin-right: 25px;
+        justify-content: flex-end;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+    header ul{width: 100%;}
+
+    input[type="checkbox"]{
+        display: none;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+        height: 70px;
+    }
+}
+
+button{
+    background: #F2AA4C;
+    border-radius: 4px;
+    padding: 7px 24px;
+    border: 1px solid #F2AA4C;
+    color: white;
+    font-family: 'Bai Jamjuree', sans-serif;
+    cursor: pointer;
+}
+
+.build-your-dream-house{
+    font-size: 7em;
+    font-weight: 900;
+    padding: 0.5em 0;
+}
+.house{
+    color: #F2AA4C;
+}
+.first-and-most-img{
+    width: 60%;
+}
+.real-estate{
+    width: 100%;
+}
+.build-professional{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 3em;
+}
+.free-consultation{
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+.free-consultation div p{
+    margin-top: 40px;
+}
+.first-and-most{
+    width: 25%;
+}
+.fa-arrow-circle-right{
+    color: #F2AA4C;
+}
+.fa-arrow-circle-right, .fa-arrow-left{
+    padding: 10px 20px 10px 10px;
+    cursor: pointer;
+}
+.arrows{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 250px;
+}
+.four-images{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* width: 50%; */
+}
+.fourimgs1{
+    padding: 0 0 0 20px;
+}
+.build-your-needs{
+    margin-top: 60px;
+    font-size: 2.5em;
+}
+.build-your-needs-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.build-your-needs-img{
+    width: 40%;
+}
+.other{
+    width: 35%;
+    margin-top: 45px;
+}
+.build-your-needs-icons{
+    margin: -40px 0 80px 12px;
+}
+.stg-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 13em;
+}
+.sounds-too-good p{
+    width: 45%;
+}
+.quotes{
+    margin-left: 25em;
+}
+.realise-your-dream{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.guaranteed, .additional, .escort{
+    display: flex;
+    justify-content: space-evenly;
+}
+.guaranteed-text, .additional-text, .escort-text{
+    margin-left: 40px;
+}
+.sounds-too-good-h2{
+    font-size: 2.5em;
+    margin-top: 50px;
+}
+.realise-your-dream-img{
+    width: 25%;
+}
+.realise-your-dream-text{
+    font-size: 3em;
+    margin-top: 100px;
+}
+.contact-us-h2{
+    font-size: 2.5em;
+    margin-top: 50px;
+}
+.contact-us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.map-images{
+    display: flex;
+    width: 45%;
+}
+.map-img{
+    width: 95%;
+}
+.lady-img{
+    width: 25%;
+    position: absolute;
+    margin: 120px 0px 0px -60px;
+}
+.our-partners{
+    font-size: 2.5em;
+    margin-top: 50px;
+}
+.partners-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.logo{
+    width: 10%;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 50px 20px;
+    box-shadow: 0px -10px 20px -5px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+}
+.quick-links{
+    display: flex;
+
+    flex-direction: row;
+}
+.footer-p{
+    margin: 0px 20px;
+}
+.adam{
+    font-size: 20px;
+    margin: 40px 0px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    main{
+        padding: 0 1em;
+    }
+    .build-your-dream-house{
+        font-size: 2.7em;
+        font-weight: 900;
+        padding: 5.8em 0 0.3 0;
+    }
+    .heading{
+        padding-top: 5em;
+    }
+    .first-and-most-img{
+        width: 100%;
+    }
+    .build-professional{
+        margin-top: 60px;
+        font-size: 1.5em;
+    }
+    .free-consultation{
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+    .first-fc-button{
+        margin-top: 20px;
+    }
+    .first-and-most{
+        width: 90%;
+    }
+    .fa-arrow-circle-right, .fa-arrow-left{
+        padding: 10px 20px 10px 10px;
+    }
+    .arrows{
+        padding-right: 50px;
+    }
+    .four-images{
+        display: flex;
+        flex-wrap: wrap;
+        /* width: 50%; */
+    }
+    .fourimgs1{
+        padding: 0 0 0 0;
+    }
+    .coll{
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    .build-your-needs{
+        margin-top: 60px;
+        font-size: 1.5em;
+    }
+    .build-your-needs-sec{
+        margin-top: 40px;
+    }
+    .build-your-needs-img{
+        width: 100%;
+    }
+    .other{
+        width: 90%;
+        margin-top: 45px;
+    }
+    .build-your-needs-icons{
+        margin: -40px 0 80px 12px;
+    }
+    .stg-text{
+        justify-content: flex-start;
+        padding-right: 0em;
+        padding-left: 1em;
+    }
+    .sounds-too-good p{
+        width: 90%;
+    }
+    .quotes{
+        margin-left: 0em;
+    }
+    .guaranteed-text, .additional-text, .escort-text{
+        margin-left: 40px;
+    }
+    .sounds-too-good-h2{
+        font-size: 1.5em;
+        margin-top: 50px;
+    }
+    .realise-your-dream-img{
+        width: 100%;
+    }
+    .realise-your-dream-text{
+        font-size: 2em;
+        margin-top: 40px;
+    }
+    .contact-us-h2{
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+    .map-images{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .map-img{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .lady-img{
+        width: 60%;
+        margin: 80px 0px 0px 0px;
+    }
+    .our-partners{
+        font-size: 1.5em;
+        margin-top: 50px;
+    }
+    .logo{
+        width: 35%;
+        margin-top: 20px;
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding: 50px 0px;
+        box-shadow: 0px -10px 20px -5px rgba(0, 0, 0, 0.3);
+        margin-top: 50px;
+    }
+    .quick-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-p, .footer div a{
+        margin: 10px 20px;
+    }
+}
